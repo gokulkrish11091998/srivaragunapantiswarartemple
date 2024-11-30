@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="javascript:toggleLanguage()">
+
+    <!-- Header and Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Temple Logo">
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#home" class="home-link link-english">Home</a></li>
+					<li><a href="#home" class="home-link link-tamil">முகப்பு</a></li>
+                    <li><a href="#about-temple" class="about-temple-link link-english">About Temple</a></li>
+					<li><a href="#about-temple" class="about-link link-tamil">கோயில் விவரம்</a></li>
+                    <li><a href="#gallery" class="gallery-link link-english">Gallery</a></li>
+					<li><a href="#gallery" class="gallery-link link-tamil">புகைப்படங்கள்</a></li>
+					<li><a href="#donation" class="location-link link-english">Donation</a></li>
+					<li><a href="#donation" class="location-link link-tamil">நன்கொடை</a></li>
+					<li><a href="#location" class="location-link link-english">Location</a></li>
+					<li><a href="#location" class="location-link link-tamil">இருப்பிடம்</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button id="language-toggle" onclick="toggleLanguage()">Switch to Tamil</button>
+        </div>
+    </header>
+
+    <!-- Sliding Images Section -->
+    <section id="home" class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="temple-bg.jpg" alt="Temple Image 1">
+                <div class="caption home-caption">The temple is a place of holiness...</div>
+                <div class="caption home-caption-tamil" style="display: none;">கோவில் ஒரு புனித இடமாகும்...</div>
+            </div>
+            <div class="slide">
+                <img src="temple2.jpg" alt="Temple Image 2">
+                <div class="caption home-caption">Experience spiritual bliss...</div>
+                <div class="caption home-caption-tamil" style="display: none;">இந்த புனித கோவிலில் ஆன்மிக ஆனந்தம்...</div>
+            </div>
+            <div class="slide">
+                <img src="temple3.jpg" alt="Temple Image 3">
+                <div class="caption home-caption">A serene environment...</div>
+                <div class="caption home-caption-tamil" style="display: none;">ஆழமான தியானத்திற்கு அனுமதிக்கும்...</div>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+	<section class ="content">
+    <section id="about-temple">
+        <h2 class="about-heading">About Temple :</h2>
+        <p class="about-content">Arulmigu Ramanathaswamy temple is elegantly situated in Tamil Nadu State, Ramanathapuram District, on an island called Rameswaram, shaped like a Conch in the hands of Lord Thirumal and is spread over an area of about 15 acres. This temple is related to the history of the Ramayana period.
+								 The Puranas say that as advised by sage Agasthiya, Sri Rama arrived here along with Sita and Lakshmana and consecrated and worshipped the Sivalinga to expiate the sin of Brahmahatya he got by killing Ravana. It is said that Sri Rama fixed an auspicious time for installation and sent Anjaneya to Mount Kailas to bring a Sivalinga. As Anjaneya could not return in time, Sita herself made a Sivalinga of sand and worship was over when Anjaneya returned with a Lingam from far off Mount Kailas.
+								 Anjaneya was enraged and tried in vain to remove the consecrated Sivalinga made of sand. To pacify Anjaneya, Rama also consecrated Anjaneyas Sivalinga (Visvalingam) by the side of Ramalinga and ordered that all the pujas should first be performed for Visvalingam brought by Anjaneya. In this temple, the first pooja is performed for this Lord Visvanathar. As its very name implies, Rameswaram is the holy place of Lord Rameswara, i.e., Eswara consecrated by Sri Rama.</p>
+        <h2 class="about-heading-tamil" style="display: none;">கோயில் விவரம் :</h2>
+        <p class="about-content-tamil" style="display: none;">அருள்மிகு இராமநாதசுவாமி திருக்கோயில் தமிழ்நாட்டின் இராமநாதபுரம் மாவட்டத்தில், திருமாலின் கையில் உள்ள சங்கைப் போன்ற வடிவைக் கொண்ட இராமேசுவரம் எனும் தீவில், அக்னி தீர்த்த கடற்கரை பகுதியில், சுமார் 15 ஏக்கர் பரப்பளவில் எழிலோடு அமைந்துள்ளது. இத்திருக்கோயில் இராமாயண கால வரலாற்றோடு தொடர்புடையது.
+															ஸ்ரீஇராமபிரான் இராவணனை வதம் செய்ததால் தனக்கேற்பட்ட பிரம்மஹத்தி பாவத்தைப் போக்க, அகத்திய முனிவரின் ஆலோசனைப்படி இத்திருத்தலத்திற்கு சீதை, இலட்சுமணனுடன் வந்து, சிவலிங்கத்தைப் பிரதிஷ்டை செய்து வழிபட்டார் என்று புராணங்கள் கூறுகின்றன. சிவலிங்கப் பிரதிஷ்டை செய்வதற்கு நல்ல நேரம் குறித்து, கைலாசத்திலிருந்து சிவலிங்கம் கொண்டு வரும்படியாக இராமபிரான் அனுமனை அனுப்பியதாகவும், நெடுந்தொலைவிலுள்ள கைலாசத்திலிருந்து அனுமன் சிவலிங்கம் கொண்டு வருவதற்குக் காலம் தாழ்ந்ததால், சீதை விளையாட்டாக மண்ணைக் கையில் பிடித்துச் செய்த சிவலிங்கத்தையே நல்ல நேரம் முடிவதற்குள் பிரதிஷ்டை செய்து வழிபட்டனர் என்றும் சொல்லப்படுகிறது.
+															கைலாசத்திலிருந்து திரும்பி வந்த அனுமன் கோபம் கொண்டு மணலால் செய்து பிரதிஷ்டை செய்யப்பட்ட சிவலிங்கத்தை அகற்ற முயன்றும் இயலவில்லை. அனுமனை சாந்தப்படுத்த இராமலிங்கத்தின் பக்கத்தில் அனுமன் கொண்டு வந்த விசுவலிங்கத்தை பிரதிஷ்டை செய்து, இனி அதற்கே பூசை முதலியன முதலில் செய்ய வேண்டுமென்று இராமபிரான் ஆணையிட்டார். இத்திருக்கோயிலில் அனுமனால் கொண்டுவரப்பட்ட விசுவநாதருக்கே தினந்தோறும் முதல் பூசை நடைபெறுகிறது. இராமபிரான் ஈஸ்வரனை வழிபட்டதால் இத்திருத்தலம் இராமேசுவரம் எனப் பெயர் பெற்றது.</p>
+    </section>
+	<section id="gallery" class="gallery-section">
+	<h2 class="gallery-heading">Gallery :</h2>
+	<h2 class="gallery-heading-tamil">புகைப்படங்கள் :</h2>
+        <div class="row">
+			<div class="column">
+				<img src="pic1.jpg" alt="shivan" onclick="myFunction(this);">
+			</div>
+  <div class="column">
+    <img src="pic2.jpg" alt="shivan" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic3.jpg" alt="shivan" onclick="myFunction(this);">
+  </div>
+
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:50%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+    </section>
+	
+	
+	<section id="donation" class="donation-section">
+        <h2 class="donation-heading">Donation</h2>
+		<h2 class="donation-heading-tamil">நன்கொடை</h2>
+        <div class="donation-container">
+            <div class="account-details">
+                <p><strong>Account Holder Name:</strong> [Your Account Holder Name]</p>
+                <p><strong>Account Number:</strong> [Your Account Number]</p>
+                <p><strong>IFSC Code:</strong> [Your IFSC Code]</p>
+            </div>
+            <div class="qr-code">
+                <p class="scan-heading"><strong>Scan to Donate:</strong></p>
+				<p class="scan-heading-tamil"><strong>நன்கொடை செய்ய ஸ்கேன் செய்யவும்:</strong></p>
+                <img src="upi_qr.png" alt="UPI QR Code">
+            </div>
+        </div>
+    </section>
+	
+	<section id="location" class="location-section">
+        <h2 class="location-heading">Location :</h2>
+		<h2 class="location-heading-tamil">இருப்பிடம் :</h2>
+		<div class="location-container">
+        <p class="location-content">Find us on the map below.</p>
+		 <div class="map">
+        <p class="location-content-tamil" style="display: none;">எங்களை கீழே உள்ள வரைபடத்தில் காணவும்.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		</div>
+    </section>
+	</section>
+	
+	</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Temple. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">&#8679; Top</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
