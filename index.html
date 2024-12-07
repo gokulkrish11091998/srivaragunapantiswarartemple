@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Website</title>
+    <title>SRI VADAMALAI AMBAL TEMPLE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,7 +14,7 @@
     <header>
         <div class="navbar">
             <div class="logo">
-                <img src="logo.jpg" alt="Temple Logo">
+                <img src="logo1.jpg" alt="Temple Logo">
             </div>
             <nav id="menu">
                 <ul>
@@ -34,24 +34,34 @@
             <button id="language-toggle" onclick="toggleLanguage()">Switch to Tamil</button>
         </div>
     </header>
+	
+	<div class="heading-container">
+    <h1 class="main-heading link-english">Vadamalai Ambal Samedha Arulmigu Varagunapantiswarar Temple</h1>
+	<h1 class="main-heading link-tamil">வாடாமலை அம்பாள் சமேத அருள்மிகு வரகுணபாண்டீஸ்வரர் ஆலயம்</h1>
+	</div>
 
     <!-- Sliding Images Section -->
     <section id="home" class="slider">
         <div class="slides">
             <div class="slide active">
-                <img src="temple-bg.jpg" alt="Temple Image 1">
-                <div class="caption home-caption">The temple is a place of holiness...</div>
-                <div class="caption home-caption-tamil" style="display: none;">கோவில் ஒரு புனித இடமாகும்...</div>
+                <img src="slide1.jpg" alt="Temple Image 1">
+                <div class="caption home-caption">Arulmigu Sri Varagunapantiswarar</div>
+                <div class="caption home-caption-tamil" style="display: none;">அருள்மிகு ஸ்ரீ வரகுணபாண்டீஸ்வரர்</div>
             </div>
             <div class="slide">
-                <img src="temple2.jpg" alt="Temple Image 2">
-                <div class="caption home-caption">Experience spiritual bliss...</div>
-                <div class="caption home-caption-tamil" style="display: none;">இந்த புனித கோவிலில் ஆன்மிக ஆனந்தம்...</div>
-            </div>
+                <img src="slide2.jpg" alt="Temple Image 2">
+                <div class="caption home-caption">Arulmigu Sri Vadamalai Ambal</div>
+                <div class="caption home-caption-tamil" style="display: none;">அருள்மிகு ஸ்ரீ வாடாமலை அம்பாள்</div>
+			</div>
             <div class="slide">
-                <img src="temple3.jpg" alt="Temple Image 3">
-                <div class="caption home-caption">A serene environment...</div>
-                <div class="caption home-caption-tamil" style="display: none;">ஆழமான தியானத்திற்கு அனுமதிக்கும்...</div>
+                <img src="slide3.jpg" alt="Temple Image 3">
+                <div class="caption home-caption">Temple view</div>
+                <div class="caption home-caption-tamil" style="display: none;">கோவில் கோபுரம்</div>
+            </div>
+			<div class="slide">
+                <img src="slide4.jpg" alt="Temple Image 4">
+                <div class="caption home-caption">Kumbhabhishekham of temple</div>
+                <div class="caption home-caption-tamil" style="display: none;">கோவில் குடமுழுக்கு</div>
             </div>
         </div>
         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
@@ -60,6 +70,7 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </section>
 
@@ -67,9 +78,11 @@
 	<section class ="content">
     <section id="about-temple">
         <h2 class="about-heading">About Temple :</h2>
-        <p class="about-content">Arulmigu Ramanathaswamy temple is elegantly situated in Tamil Nadu State, Ramanathapuram District, on an island called Rameswaram, shaped like a Conch in the hands of Lord Thirumal and is spread over an area of about 15 acres. This temple is related to the history of the Ramayana period.
-								 The Puranas say that as advised by sage Agasthiya, Sri Rama arrived here along with Sita and Lakshmana and consecrated and worshipped the Sivalinga to expiate the sin of Brahmahatya he got by killing Ravana. It is said that Sri Rama fixed an auspicious time for installation and sent Anjaneya to Mount Kailas to bring a Sivalinga. As Anjaneya could not return in time, Sita herself made a Sivalinga of sand and worship was over when Anjaneya returned with a Lingam from far off Mount Kailas.
-								 Anjaneya was enraged and tried in vain to remove the consecrated Sivalinga made of sand. To pacify Anjaneya, Rama also consecrated Anjaneyas Sivalinga (Visvalingam) by the side of Ramalinga and ordered that all the pujas should first be performed for Visvalingam brought by Anjaneya. In this temple, the first pooja is performed for this Lord Visvanathar. As its very name implies, Rameswaram is the holy place of Lord Rameswara, i.e., Eswara consecrated by Sri Rama.</p>
+        <p class="about-content">Pallakurichi Arulmiku Varaguna Pandeeswarar Temple is a Shiva temple located in Pallakurichi, Tuticorin District, Tamil Nadu.
+								 The temple was built by the Pandya king Varaguna II who ruled in the ninth century.
+								 The temple has the shrines of Varaguna Pandeeswarar and Vadamalai Ambal. The temple is classified as a sub-temple under the control of the Hindu Religious & Charitable Endowments .
+								 Administered by a non-hereditary trustee body.Two periods of pujas are held in this temple.
+								 Special Festivals: Varushabhishekam in the month of Aippasi Uthiratati Nakshatra, Maha Shivratri.</p>
         <h2 class="about-heading-tamil" style="display: none;">கோயில் விவரம் :</h2>
         <p class="about-content-tamil" style="display: none;">அருள்மிகு இராமநாதசுவாமி திருக்கோயில் தமிழ்நாட்டின் இராமநாதபுரம் மாவட்டத்தில், திருமாலின் கையில் உள்ள சங்கைப் போன்ற வடிவைக் கொண்ட இராமேசுவரம் எனும் தீவில், அக்னி தீர்த்த கடற்கரை பகுதியில், சுமார் 15 ஏக்கர் பரப்பளவில் எழிலோடு அமைந்துள்ளது. இத்திருக்கோயில் இராமாயண கால வரலாற்றோடு தொடர்புடையது.
 															ஸ்ரீஇராமபிரான் இராவணனை வதம் செய்ததால் தனக்கேற்பட்ட பிரம்மஹத்தி பாவத்தைப் போக்க, அகத்திய முனிவரின் ஆலோசனைப்படி இத்திருத்தலத்திற்கு சீதை, இலட்சுமணனுடன் வந்து, சிவலிங்கத்தைப் பிரதிஷ்டை செய்து வழிபட்டார் என்று புராணங்கள் கூறுகின்றன. சிவலிங்கப் பிரதிஷ்டை செய்வதற்கு நல்ல நேரம் குறித்து, கைலாசத்திலிருந்து சிவலிங்கம் கொண்டு வரும்படியாக இராமபிரான் அனுமனை அனுப்பியதாகவும், நெடுந்தொலைவிலுள்ள கைலாசத்திலிருந்து அனுமன் சிவலிங்கம் கொண்டு வருவதற்குக் காலம் தாழ்ந்ததால், சீதை விளையாட்டாக மண்ணைக் கையில் பிடித்துச் செய்த சிவலிங்கத்தையே நல்ல நேரம் முடிவதற்குள் பிரதிஷ்டை செய்து வழிபட்டனர் என்றும் சொல்லப்படுகிறது.
@@ -80,13 +93,22 @@
 	<h2 class="gallery-heading-tamil">புகைப்படங்கள் :</h2>
         <div class="row">
 			<div class="column">
-				<img src="pic1.jpg" alt="shivan" onclick="myFunction(this);">
+				<img src="gallery1.jpg" alt="Temple view" onclick="myFunction(this);">
 			</div>
   <div class="column">
-    <img src="pic2.jpg" alt="shivan" onclick="myFunction(this);">
+    <img src="gallery2.jpg" alt="Temple kalasam" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="pic3.jpg" alt="shivan" onclick="myFunction(this);">
+    <img src="gallery3.jpg" alt="Varagunapantiswarar" onclick="myFunction(this);">
+  </div>
+   <div class="column">
+    <img src="gallery4.jpg" alt="Vadamalai Ambal" onclick="myFunction(this);">
+  </div>
+   <div class="column">
+    <img src="gallery5.jpg" alt="Ambal" onclick="myFunction(this);">
+  </div>
+   <div class="column">
+    <img src="gallery6.jpg" alt="Temple kalasam" onclick="myFunction(this);">
   </div>
 
 </div>
@@ -106,19 +128,19 @@
 	
 	
 	<section id="donation" class="donation-section">
-        <h2 class="donation-heading">Donation</h2>
-		<h2 class="donation-heading-tamil">நன்கொடை</h2>
+        <h2 class="donation-heading">Donation :</h2>
+		<h2 class="donation-heading-tamil">நன்கொடை :</h2>
         <div class="donation-container">
             <div class="account-details">
-                <p><strong>Account Holder Name:</strong> [Your Account Holder Name]</p>
-                <p><strong>Account Number:</strong> [Your Account Number]</p>
-                <p><strong>IFSC Code:</strong> [Your IFSC Code]</p>
+                <p><strong>Account Holder Name:</strong> 
+					<span id="protectedText" data-original="SIVA SHETRA CHARITABLE TRUST">SIVA SHETRA CHARITABLE TRUST</span>
+				</p>
+				<p><strong>Account Number:</strong> 
+					<span id="protectedText" data-original="00000043543576805">00000043543576805</span>
+				</p>
+                <p><strong>IFSC Code:</strong> SBIN0007105</p>
             </div>
-            <div class="qr-code">
-                <p class="scan-heading"><strong>Scan to Donate:</strong></p>
-				<p class="scan-heading-tamil"><strong>நன்கொடை செய்ய ஸ்கேன் செய்யவும்:</strong></p>
-                <img src="upi_qr.png" alt="UPI QR Code">
-            </div>
+            
         </div>
     </section>
 	
@@ -129,7 +151,9 @@
         <p class="location-content">Find us on the map below.</p>
 		 <div class="map">
         <p class="location-content-tamil" style="display: none;">எங்களை கீழே உள்ள வரைபடத்தில் காணவும்.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<a href="https://maps.app.goo.gl/9Unf4ZbcimHRWDt4A" class="link-english" target="_blank" style="margin-bottom: 20px;">Open Location in Google Maps</a>
+		<a href="https://maps.app.goo.gl/9Unf4ZbcimHRWDt4A" class="link-tamil" target="_blank" style="margin-bottom: 20px;">கூகுள் வரைபடத்தில் இருப்பிடத்தைத் திறக்கவும்</a>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15788.418586685795!2d77.9775244!3d8.3913676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0386d43aed4df7%3A0x5230f0e18531b1d3!2sSRI%20VADAMALAI%20AMBAL%20TEMPLE!5e0!3m2!1sen!2sin!4v1733587700806!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 		</div>
     </section>
@@ -141,9 +165,16 @@
     <footer>
         <p>&copy; 2024 Temple. All rights reserved.</p>
     </footer>
+	
+	<!--Scroll to donate  Button -->
+    <button id="donation-bu" class="donation-button-link link-english" onclick="scrollToDonation()"><img src="donation.jpg" alt="Donate" class="circle"><br>Donate</button>
+	<button id="donation-bu" class="donation-button-link link-tamil" onclick="scrollToDonation()"><img src="donation.jpg" alt="Donate" class="circle"><br>நன்கொடை</button>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" onclick="scrollToTop()">&#8679; Top</button>
+    <button id="back-to-top" class="top-button-link link-english" onclick="scrollToTop()">&#8679; Top</button>
+	<button id="back-to-top" class="top-button-link link-tamil" onclick="scrollToTop()">&#8679; மேல்</button>
+	
+	
 
     <script src="script.js"></script>
 </body>

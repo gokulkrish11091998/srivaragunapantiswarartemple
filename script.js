@@ -2,6 +2,17 @@
 let slideIndex = 1;
 let isTamil = true;  // Track current language (false = English, true = Tamil)
 
+const protectedElement = document.getElementById('protectedText');
+const original = protectedElement.dataset.original;
+
+setInterval(() => {
+  if (protectedElement.innerText !== original) {
+    console.error("Text has been tampered with!");
+    alert("Unauthorized change detected!");
+    protectedElement.innerText = original; // Restore the original text
+  }
+}, 1000);
+
 // Function to show the current slide
 function showSlide(index) {
     let slides = document.querySelectorAll('.slide');
@@ -63,6 +74,13 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function scrollToDonation() {
+   
+	var donationv = document.getElementById("donation");
+    donationv.scrollIntoView();
+}
+
+
 function toggleMenu() {
     const menu = document.querySelector('nav ul');
     menu.classList.toggle('active'); // Toggle the active class to show/hide the menu
@@ -79,6 +97,24 @@ function myFunction(imgs) {
   imgText.innerHTML = imgs.alt;
   // Show the container element (hidden with CSS)
   expandImg.parentElement.style.display = "block";
+}
+
+function copyToClipboard() {
+  const textToCopy = document.getElementById('copyText').value;
+  navigator.clipboard.writeText(textToCopy)
+    .then(() => alert('Text copied: ' + textToCopy))
+    .catch(err => console.error('Failed to copy text: ', err));
+}
+
+function copyToClipboard() {
+  const copyText = document.getElementById('copyText');
+  navigator.clipboard.writeText(copyText.value)
+    .then(() => {
+      alert('Text copied to clipboard!');
+    })
+    .catch(err => {
+      console.error('Failed to copy text: ', err);
+    });
 }
 
 // Initialize slider and language toggle state
